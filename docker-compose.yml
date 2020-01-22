@@ -5,6 +5,8 @@ services:
     image: grafana/grafana
     environment:
       - GF_USERS_ALLOW_SIGN_UP=true
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_NAME=Gamma Quadrant
     ports:
       - "192.168.10.47:80:3000"
     volumes:
